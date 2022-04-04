@@ -2,12 +2,11 @@
 
 @media (max-width: 767px) {
     .expensive-wrapper {
-        max-width: 300px !important;
+        padding: 0 15px;
     }
 
     .materials-wrapper {
-        max-width: 300px;
-        margin: 0 auto;
+        padding: 0 15px;
     }
 
     .hero-heading {
