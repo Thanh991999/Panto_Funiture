@@ -64,6 +64,10 @@
         max-width: initial;
     }
 
+    .section.reason {
+        text-align: center;
+    }
+
      
 }
 
