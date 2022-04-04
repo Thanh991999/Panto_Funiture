@@ -1,0 +1,217 @@
+
+@media (max-width: 767px) {
+    .expensive-wrapper {
+        max-width: 300px !important;
+
+    }
+
+    .materials-wrapper {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero-heading {
+        --font-size-regular: 2rem;
+    }
+
+    .sub-hero-heading {
+        --font-size-regular: 1.6rem;
+        max-width: 300px;
+    }
+
+    .section.reason {
+        padding: 0;
+    }
+
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-bonus__condition {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-bonus__term {
+        margin: 0;
+    }
+}
+
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-heading {
+        --font-size-regular: 6rem;
+    }
+
+    .materials-wrapper {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+/* tab-mobile */
+
+@media (max-width: 1023px) {
+    .expensive-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .expensive-img {
+        flex-basis: 100%;
+        order: 2;
+        margin-top: 50px;
+    }
+
+    .expensive-img img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: -12px 107px 48px -60px #91725299;
+    }
+
+    .expensive-img::before {
+        display: none;
+    }
+
+    .expensive-img::after {
+        display: none;
+    }
+
+    .section.expensive {
+        margin-top: 100px;
+    }
+
+    .expensive-text,
+    .expensive-headding {
+        max-width: initial;
+    }
+
+   
+
+    .materials-wrap {
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+
+    .materials--modify-tablet {
+        flex-basis: 100%;
+
+    }
+
+    .meterials-img__scale {
+        width: 100%;
+    }
+
+    .meterials-img__wrap::after {
+        display: none;
+    }
+
+    .meterials-img--modify-tab {
+        transform: initial !important;
+    }
+
+    .meterials-img__wrap {
+        margin-top: 50px;
+    }
+
+    .mb-40 {
+        margin-bottom: 40px;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 60%;
+        display: none;
+        background-color: #545454;
+        z-index: 11;
+        padding-top: 30px;
+    }
+
+    .nav-item {
+        padding: 20px;
+    }
+
+    .nav-item:nth-child(1) {
+        justify-content: space-between;
+    }
+    
+    .nav-item__funiture-list {
+        display: none;
+    }
+
+    .nav-item__funiture-items--tab-mob {
+        padding: 5px 40px;
+    }
+
+    .nav-item__funiture-list--tab-mob {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .subMenuHeight {
+        height: 156px;
+    }
+}
+
+/* pc */
+
+@media (min-width: 1024px) {
+    .hidden-pc {
+        display: none;
+    }
+}
+
+/* pc resolution */
+
+
+@media (max-width: 1119px) {
+    .reason-heading {
+        max-width: initial;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    .mb-35 {
+        margin-bottom: 35px;
+    }
+
+    
+}
+
+@media (max-width: 1329px) {
+    .materials-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .hidden-pc-low {
+        display: none;
+    }
+
+    .meterials-img--modify-pc-low {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .mt {
+        margin-top: 0;
+    }
+    
+}
+
+
+@media (min-width: 1024px) and (max-width: 1535px) {
+    .mt {
+        margin-top: 70px;
+    }
+
+    
+}
