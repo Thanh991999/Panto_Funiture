@@ -1051,9 +1051,6 @@
     z-index: 2;
 }
 
-.product-wrapper__vase-secondary {
-
-}
 
 .product-wrapper__vase {
     position: absolute;
@@ -1061,6 +1058,7 @@
     top: -286px;
     width: 270px;
     display: none;
+    z-index: 10;
 }
 
 .product-wrapper__vase.active {
