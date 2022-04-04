@@ -373,6 +373,8 @@
     border-radius: 50%;
     background-color: #0D1B39;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 
