@@ -186,6 +186,7 @@
 .hero-search input {
     width: 100%;
     background: initial;
+    color: var(--white-color);
 }
 
 .hero-search input::placeholder {
