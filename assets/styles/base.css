@@ -112,4 +112,8 @@ input {
     display: none !important;
 }
 
+.flex {
+    display: flex;
+}
+
 

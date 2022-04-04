@@ -9,21 +9,21 @@ $(document).ready(function(){
         infinite: false,
         responsive: [
           {
-            breakpoint: 1249,
+            breakpoint: 1024,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
             }
           },
           {
-            breakpoint: 1031,
+            breakpoint: 820,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1
             }
           },
           {
-            breakpoint: 769,
+            breakpoint: 553,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -40,7 +40,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('.slider-review').slick({
+    $('.slider-review__wrap').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         speed: 1000,

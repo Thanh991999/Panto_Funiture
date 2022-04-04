@@ -1,29 +1,15 @@
+.container-full {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .container {
     width: 100%;
-    padding: 0;
-    display: block;
-}
-
-.container.wide {
-    max-width: calc(1440px - 80*2px);
+    max-width: 1200px;
     margin: 0 auto;
-}
+    padding: 0 15px;
 
-.container.wide1 {
-    max-width: calc(1440px - 121*2px);
-    margin: 0 auto;
 }
-
-.container.wide2 {
-    max-width: calc(1440px - 126*2px);
-    margin: 0 auto;
-}
-
-.container.wide3 {
-    max-width: 1064px;
-    margin: 0 auto;
-}
-
 
 .row {
     display: flex;
