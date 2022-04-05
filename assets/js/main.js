@@ -4,31 +4,37 @@ const $$1 = document.querySelectorAll.bind(document);
 
 
 function click_on_category_appear_product() {
-    let get_category = document.querySelectorAll('.slider.best-selling');
-    let btnCategory = document.querySelectorAll('.category-items');
+    let sliderLists = document.querySelectorAll('.slider.best-selling');
+    let categoryItems = document.querySelectorAll('.category-items');
     
-    btnCategory.forEach(function(line, index)
+    categoryItems.forEach(function(item, index)
     {
-        line.onclick = function(events) {
+        item.onclick = function(events) {
             
-            // active appear line category 
+            // active appear slider 
             $1('.category-items.active').classList.remove('active');
 
             events.target.classList.add('active');
 
             document.querySelector('.slider-active.best-selling').classList.remove('slider-active');
             
-            get_category[index].classList.add('slider-active');
-
-            // add animation on products
+            sliderLists[index].classList.add('slider-active');           
 
             // tạo biến để lấy từng cột danh mục trực tiếp
             const get_product_category = $$1('.best-selling.slider-active .slider-items');
             
             console.log(get_product_category)
 
-            
-            
+            // add animation on products
+
+            get_product_category.forEach(function(productItem)
+            {
+                productItem.classList.add('play_animation');
+                setTimeout(function(){
+                    productItem.classList.remove('play_animation');
+                }, 1100)
+            })
+
            
         }
     })
@@ -68,14 +74,15 @@ if( getMenu) {
         
     }
 
-    const subMenuHeight = $1('.nav-item__funiture-list--tab-mob').offsetHeight;
+    // const subMenuHeight = $1('.nav-item__funiture-list--tab-mob').offsetHeight;
 
-    $1('.nav-item:first-child').addEventListener('click', function() {
-        $1('.nav-item__funiture-list--tab-mob').classList.toggle('subMenuHeight');
-    })
+    // $1('.nav-item:first-child').addEventListener('click', function() {
+    //     $1('.nav-item__funiture-list--tab-mob').classList.toggle('subMenuHeight');
+    // })
 }
 
 
+// active các dot trên hero section
 const dotOption = $1('.header-wraper__dot');
 
 dotOption.addEventListener('click', function() {
@@ -95,7 +102,33 @@ dotOptionVaseSecon.addEventListener('click', function() {
     $1('.header-wraper__dot-options--vase-secondary ').classList.toggle('active');
 })
 
+
+// chỉnh height cho slider-category
 const sliderHeight = $1('.best-selling').offsetHeight;
 console.log(sliderHeight)
 
 $1('.best-selling__product').style.height = `${sliderHeight + 60}px`
+
+
+// set height cho hiệu ứng hover hiện submenu
+
+const subMenuItemHeight = $1('.nav-item__funiture-link').offsetHeight;
+const amountItems = $$1('.nav-item__funiture-items').length;
+
+console.log(subMenuItemHeight)
+
+const heightSubMenu = `${(subMenuItemHeight + 10)*amountItems + 10}`
+
+const subMenu = $1('.nav-item:first-child');
+
+subMenu.onclick = function() {
+      $1('.nav-item__funiture-list').classList.toggle('active');
+    //   $1('.nav-item:first-child').classList.toggle = '0';
+}
+
+// document.querySelector('.nav-item__funiture-list').style.height= `${heightSubMenu}px`;
+
+// $(document).ready(function(){ 
+//     console.log(document.querySelector('.slick-arrow'));
+
+// }) 

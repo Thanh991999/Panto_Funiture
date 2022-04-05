@@ -11,7 +11,7 @@
     --letter-spacing: 0.01em;
 
     --font-size-regular: 1.8rem;
-    --line-height-regular: 2.1rem;
+    --line-height-regular: 1.16em;
 
     --font-size-bold: 2.4rem;
     --line-height-bold: 2.8rem;
@@ -20,6 +20,8 @@
     --Gilroy-Medium: 'Gilroy-Medium';
 
     --orange-color: #E58411;
+
+    --heightSubMenu: 10px;
 }
 
 * {
