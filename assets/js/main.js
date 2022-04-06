@@ -123,10 +123,7 @@ const subMenu = $1('.nav-item:first-child');
 
 subMenu.onclick = function() {
       $1('.nav-item__funiture-list').classList.toggle('active');
-    //   $1('.nav-item:first-child').classList.toggle = '0';
 }
-
-// document.querySelector('.nav-item__funiture-list').style.height= `${heightSubMenu}px`;
 
 // $(document).ready(function(){ 
 //     console.log(document.querySelector('.slick-arrow'));

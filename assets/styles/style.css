@@ -516,6 +516,7 @@
     align-items: end;
     margin-bottom: 40px;
     position: relative;
+    border-radius: 20px;
 }
 
 .client-review::after {
